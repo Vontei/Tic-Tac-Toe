@@ -1,24 +1,28 @@
 var box = document.getElementById('table');
 var mark = document.getElementsByTagName('p');
+var cell = document.getElementsByTagName('td');
 var counter = 0
 var xArray = [];
 var oArray = [];
 
-box.addEventListener('click', function(e){
-  if(counter%2===0){
-  e.target.innerHTML = 'X'
-  xArray.push(e.target.id)
-  } else {
-    e.target.innerHTML = 'O'
-    oArray.push(e.target.id)
-  }
-  counter++
-  xWinner()
-  oWinner()
-  if(counter === 9){
-    alert('You Tie');
-  }
-})
+  box.addEventListener('click', function(e){  //
+    if(counter%2===0){
+    e.target.innerHTML = 'X'
+    xArray.push(e.target.id)
+    } else {
+      e.target.innerHTML = 'O'
+      oArray.push(e.target.id)
+      }
+    counter++
+    xWinner()
+    oWinner()
+    if(counter === 9){
+      alert('You Tie');
+    }
+
+  })
+
+
 
 function xWinner() {
   var diagonalOne = [];
