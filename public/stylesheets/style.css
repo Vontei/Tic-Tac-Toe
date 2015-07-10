@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+table{
+  height: 500px;
+  width: 500px;
+}
+
+td{
+  border: 1px solid black;
+
+}
+
+
+#one{
+border-top: none;
+border-left: none;
+}
+
+#two{
+  border-top: none;
+}
+
+#three{
+  border-top: none;
+  border-right: none;
+}
+
+#four{
+  border-left: none;
+}
+
+#six{
+  border-right: none;
+}
+
+#seven{
+  border-left: none;
+  border-bottom: none;
+}
+
+#eight{
+  border-bottom: none;
+}
+
+#nine{
+  border-bottom: none;
+  border-right: none;
+}
